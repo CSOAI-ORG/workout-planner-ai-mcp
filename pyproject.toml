@@ -4,15 +4,26 @@ build-backend = "hatchling.build"
 
 [project]
 name = "workout-planner-ai-mcp"
-version = "0.1.0"
-description = "Plan workouts, calculate BMI and one-rep max estimates, and suggest exercise splits."
+version = "1.0.0"
+description = "MEOK AI Labs — Workout Planner tools for AI agents and LLMs"
+authors = [{name="MEOK AI Labs", email="nicholas@meok.ai"}]
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
+keywords = ["mcp", "mcp-server", "model-context-protocol", "claude", "ai-tools", "meok-ai-labs", "workout-planning", "exercise-routine", "fitness-program", "strength-training", "gym-planner"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
+]
 dependencies = [
     "mcp>=1.0.0",
-    "pydantic>=2.0",
 ]
 
-[project.scripts]
-workout_planner_ai_mcp = "workout_planner_ai_mcp.server:main"
+[project.urls]
+Homepage = "https://meok.ai"
+Repository = "https://github.com/CSOAI-ORG/workout-planner-ai-mcp"
+Documentation = "https://meok.ai/docs/workout-planner-ai-mcp"
+"Bug Tracker" = "https://github.com/CSOAI-ORG/workout-planner-ai-mcp/issues"
