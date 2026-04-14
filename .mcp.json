@@ -1,20 +1,6 @@
 {
   "name": "workout-planner-ai-mcp",
-  "description": "MEOK AI Labs \u2014 Workout Planner tools for AI agents and LLMs",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/workout-planner-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
-  "tools": [
-    "generate_workout"
-  ],
-  "categories": [
-    "Health",
-    "Fitness"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+  "description": "Plan workouts, calculate BMI and one-rep max estimates, and suggest exercise splits.",
+  "version": "1.0.0",
+  "tools": []
 }
