@@ -1,5 +1,4 @@
 name: workout-planner-ai-mcp
-description: Plan workouts, calculate BMI and one-rep max estimates, and suggest exercise
-  splits.
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools: []

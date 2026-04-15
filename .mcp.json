@@ -1,6 +1,6 @@
 {
   "name": "workout-planner-ai-mcp",
-  "description": "Plan workouts, calculate BMI and one-rep max estimates, and suggest exercise splits.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": []
 }
