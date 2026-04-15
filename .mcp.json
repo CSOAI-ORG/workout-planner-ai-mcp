@@ -1,6 +1,6 @@
 {
   "name": "workout-planner-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Create workout plans, track progress, suggest exercises, and calculate training volume.",
+  "description": "MCP server for workout planner ai. Features create workout, track progress, suggest exercises. From MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
