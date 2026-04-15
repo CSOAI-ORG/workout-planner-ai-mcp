@@ -1,7 +1,65 @@
 name: workout-planner-ai-mcp
-description: MEOK AI Labs MCP Server
+description: Create workout plans, track progress, suggest exercises, and calculate
+  training volume.
 version: 1.0.0
 tools:
-- name: generate_workout
-  description: Generate a workout plan
-  parameters: []
+- name: create_workout
+  description: Create a complete workout plan based on goal, equipment, and difficulty
+    level.
+  parameters:
+  - name: goal
+    type: string
+    required: false
+  - name: equipment
+    type: array
+    required: false
+  - name: difficulty
+    type: string
+    required: false
+  - name: duration_minutes
+    type: integer
+    required: false
+- name: track_progress
+  description: Log a workout entry and view progress history for a given exercise.
+  parameters:
+  - name: user_id
+    type: string
+    required: true
+  - name: exercise
+    type: string
+    required: true
+  - name: weight
+    type: number
+    required: false
+  - name: reps
+    type: integer
+    required: false
+  - name: sets
+    type: integer
+    required: false
+  - name: notes
+    type: string
+    required: false
+- name: suggest_exercises
+  description: Suggest exercises for a specific muscle group filtered by equipment
+    and difficulty.
+  parameters:
+  - name: muscle_group
+    type: string
+    required: true
+  - name: equipment
+    type: array
+    required: false
+  - name: difficulty
+    type: string
+    required: false
+  - name: count
+    type: integer
+    required: false
+- name: calculate_volume
+  description: Calculate total training volume and per-muscle breakdown. Each item
+    needs 'name', 'muscle_group', 'weight', 'reps', 'sets'.
+  parameters:
+  - name: exercises
+    type: array
+    required: true

@@ -1,15 +1,98 @@
 {
   "name": "workout-planner-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs MCP Server",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Create workout plans, track progress, suggest exercises, and calculate training volume.",
   "version": "1.0.0",
   "tools": [
     {
-      "name": "generate_workout",
-      "description": "Generate a workout plan",
+      "name": "create_workout",
+      "description": "Create a complete workout plan based on goal, equipment, and difficulty level.",
       "parameters": {
         "type": "object",
-        "properties": {},
+        "properties": {
+          "goal": {
+            "type": "string"
+          },
+          "equipment": {
+            "type": "array"
+          },
+          "difficulty": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "integer"
+          }
+        },
         "required": []
+      }
+    },
+    {
+      "name": "track_progress",
+      "description": "Log a workout entry and view progress history for a given exercise.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "exercise": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "number"
+          },
+          "reps": {
+            "type": "integer"
+          },
+          "sets": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "user_id",
+          "exercise"
+        ]
+      }
+    },
+    {
+      "name": "suggest_exercises",
+      "description": "Suggest exercises for a specific muscle group filtered by equipment and difficulty.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "muscle_group": {
+            "type": "string"
+          },
+          "equipment": {
+            "type": "array"
+          },
+          "difficulty": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "muscle_group"
+        ]
+      }
+    },
+    {
+      "name": "calculate_volume",
+      "description": "Calculate total training volume and per-muscle breakdown. Each item needs 'name', 'muscle_group', 'weight', 'reps', 'sets'.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "exercises": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "exercises"
+        ]
       }
     }
   ]
