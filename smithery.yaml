@@ -1,4 +1,7 @@
 name: workout-planner-ai-mcp
 description: MEOK AI Labs MCP Server
 version: 1.0.0
-tools: []
+tools:
+- name: generate_workout
+  description: Generate a workout plan
+  parameters: []
