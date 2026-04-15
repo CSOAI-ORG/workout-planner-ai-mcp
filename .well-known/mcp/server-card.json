@@ -1,0 +1,52 @@
+{
+  "name": "workout-planner-ai",
+  "description": "Create workout plans, track progress, suggest exercises, and calculate training volume.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/workout-planner-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "create_workout",
+      "description": "Create a complete workout plan based on goal, equipment, and difficulty level."
+    },
+    {
+      "name": "track_progress",
+      "description": "Log a workout entry and view progress history for a given exercise."
+    },
+    {
+      "name": "suggest_exercises",
+      "description": "Suggest exercises for a specific muscle group filtered by equipment and difficulty."
+    },
+    {
+      "name": "calculate_volume",
+      "description": "Calculate total training volume and per-muscle breakdown. Each item needs 'name', 'muscle_group', 'weight', 'reps', 'sets'."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
