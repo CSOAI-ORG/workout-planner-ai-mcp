@@ -1,73 +1,78 @@
-# Workout Planner Ai
+# Workout Planner Ai MCP
 
-> By [MEOK AI Labs](https://meok.ai) — Create workout plans, track progress, suggest exercises, and calculate training volume.
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/workout_planner_ai_mcp/)
 
-MEOK AI Labs — workout-planner-ai-mcp MCP Server. Generate personalized workout plans by goal and equipment.
+> Create workout plans, track progress, suggest exercises, and calculate training volume
 
-## Installation
+Create workout plans, track progress, suggest exercises, and calculate training volume.
+
+---
+
+## 🚀 Quick Start
 
 ```bash
-pip install workout-planner-ai-mcp
+# Install via pip
+pip install workout_planner_ai_mcp
+
+# Or install via Smithery
+npx -y @smithery/cli@latest install workout-planner-ai-mcp --client claude
 ```
 
-## Usage
+## ✨ Features
 
-```bash
-# Run standalone
-python server.py
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-# Or via MCP
-mcp install workout-planner-ai-mcp
-```
+## 📖 Documentation
 
-## Tools
+- [Full Documentation](https://docs.meok.ai/workout-planner-ai-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-### `create_workout`
-Create a complete workout plan based on goal, equipment, and difficulty level.
+## 🛡️ Compliance
 
-**Parameters:**
-- `goal` (str)
-- `equipment` (str)
-- `difficulty` (str)
-- `duration_minutes` (int)
+This MCP server is built with **EU AI Act compliance** built-in:
 
-### `track_progress`
-Log a workout entry and view progress history for a given exercise.
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-**Parameters:**
-- `user_id` (str)
-- `exercise` (str)
-- `weight` (float)
-- `reps` (int)
-- `sets` (int)
-- `notes` (str)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-### `suggest_exercises`
-Suggest exercises for a specific muscle group filtered by equipment and difficulty.
+## 🏢 Enterprise
 
-**Parameters:**
-- `muscle_group` (str)
-- `equipment` (str)
-- `difficulty` (str)
-- `count` (int)
+Need custom development, SLA guarantees, or white-label deployment?
 
-### `calculate_volume`
-Calculate total training volume and per-muscle breakdown. Each item needs 'name', 'muscle_group', 'weight', 'reps', 'sets'.
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-**Parameters:**
-- `exercises` (str)
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
+## 🤝 Part of the MEOK Ecosystem
 
-## Authentication
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-## Links
+## 📜 License
 
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/workout-planner-ai-mcp](https://github.com/CSOAI-ORG/workout-planner-ai-mcp)
-- **PyPI**: [pypi.org/project/workout-planner-ai-mcp](https://pypi.org/project/workout-planner-ai-mcp/)
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-## License
+---
 
-MIT — MEOK AI Labs
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
