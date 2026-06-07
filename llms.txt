@@ -1,0 +1,33 @@
+# workout-planner-ai-mcp
+# > By [MEOK AI Labs](https://meok.ai) — Create workout plans, track progress, suggest exercises, and calculate training volume.
+
+## Install
+```bash
+pip install workout-planner-ai-mcp
+```
+
+## Auth & Rate Limits
+- Free tier: 10 calls/day. No API key required.
+- Pro tier (£79/mo): unlimited + signed attestations.
+- Enterprise (£1,499/mo): white-label.
+
+## Tools
+
+### `create_workout`
+Create a complete workout plan based on goal, equipment, and difficulty level.
+
+### `track_progress`
+Log a workout entry and view progress history for a given exercise.
+
+### `suggest_exercises`
+Suggest exercises for a specific muscle group filtered by equipment and difficulty.
+
+### `calculate_volume`
+Calculate total training volume and per-muscle breakdown. Each item needs 'name', 'muscle_group', 'weight', 'reps', 'sets'.
+
+
+## Maintainer
+MEOK AI Labs · hello@meok.ai · https://meok.ai · MIT licensed
+
+## Pairs with
+Governance moat: pair this tool with any of MEOK's 38 governance MCPs (EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, etc.) for full compliance coverage.

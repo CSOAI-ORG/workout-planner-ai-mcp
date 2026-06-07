@@ -1,0 +1,9 @@
+# workout-planner-ai-mcp - Auto-trigger Rules
+
+When the user asks about workout planner, use workout-planner-ai-mcp tools: create_workout, track_progress, suggest_exercises, calculate_volume
+
+> By [MEOK AI Labs](https://meok.ai) — Create workout plans, track progress, suggest exercises, and calculate training volume.
+
+Install: `pip install workout-planner-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""MEOK AI Labs — workout-planner-ai-mcp MCP Server. Generate personalized workout plans by goal and equipment."""
+"""
+MEOK AI Labs — workout-planner-ai-mcp MCP Server. Generate personalized workout plans by goal and equipment."""
 
 import json
 from datetime import datetime, timezone
@@ -7,7 +8,6 @@ from collections import defaultdict
 
 from mcp.server.fastmcp import FastMCP
 import sys, os
-sys.path.insert(0, os.path.expanduser("~/clawd/meok-labs-engine/shared"))
 from auth_middleware import check_access
 
 FREE_DAILY_LIMIT = 15
@@ -114,7 +114,7 @@ def create_workout(goal: str = "general_fitness", equipment: list[str] = [], dif
     """Create a complete workout plan based on goal, equipment, and difficulty level."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     eq = [e.lower() for e in equipment] if equipment else ["bodyweight"]
@@ -164,7 +164,7 @@ def track_progress(user_id: str, exercise: str, weight: float = 0, reps: int = 0
     """Log a workout entry and view progress history for a given exercise."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     entry = {
@@ -204,7 +204,7 @@ def suggest_exercises(muscle_group: str, equipment: list[str] = [], difficulty: 
     """Suggest exercises for a specific muscle group filtered by equipment and difficulty."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     eq = [e.lower() for e in equipment] if equipment else ["bodyweight", "dumbbell", "barbell"]
@@ -240,7 +240,7 @@ def calculate_volume(exercises: list[dict], api_key: str = "") -> str:
     """Calculate total training volume and per-muscle breakdown. Each item needs 'name', 'muscle_group', 'weight', 'reps', 'sets'."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl(): return err
 
     total_volume = 0
@@ -296,5 +296,8 @@ def calculate_volume(exercises: list[dict], api_key: str = "") -> str:
     }, indent=2)
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()
