@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "workout-planner-ai-mcp",
+    "description": "MCP server for workout planner ai. Features create workout, track progress, suggest exercises. From",
+    "version": "1.0.4",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "workout-planner-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "create_workout",
+      "track_progress",
+      "suggest_exercises",
+      "calculate_volume"
+    ]
+  }
+}
