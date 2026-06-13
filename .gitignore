@@ -4,3 +4,9 @@ __pycache__/
 *.egg-info/
 .dist/
 build/
+
+# Auto-added during alignment sweep
+dist/workout_planner_ai_mcp-1.0.6-py3-none-any.whl
+dist/workout_planner_ai_mcp-1.0.6.tar.gz
+dist/workout_planner_ai_mcp-1.0.9-py3-none-any.whl
+dist/workout_planner_ai_mcp-1.0.9.tar.gz
